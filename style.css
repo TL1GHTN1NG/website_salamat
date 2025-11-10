@@ -56,3 +56,30 @@ body {
     margin-bottom: 10px;
 }
 
+.flipbook-responsive {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    transform-origin: center center;
+}
+
+@media (max-width: 768px) {
+    .flipbook-responsive {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 480px) {
+    .flipbook-responsive {
+        transform: scale(0.5);
+    }
+}
+
+/* Pastikan parent container tepat */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: auto;
+}
