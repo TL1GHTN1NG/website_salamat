@@ -7,6 +7,11 @@
 	font-family: "Poppins", sans-serif;
 }
 
+.flipbook img {
+  width: 100%;
+  height: auto;
+}
+
 body {
     display: grid;
     place-content: center;
@@ -54,4 +59,16 @@ body {
 .flipbook .page small{
 	font-size: 14px;
     margin-bottom: 10px;
+}
+
+html, body {
+  width: 1280px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.flipbook {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
